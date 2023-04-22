@@ -138,3 +138,9 @@ export GPG_TTY=$(tty)
 if [ -d $HOME/.poetry ]; then
 	path+=("$HOME/.poetry/bin")
 fi
+
+### CODESPACES-SPECIFIC ADDITIONS ###
+# Git auto-completion (including branch-names)
+if [ -f ~/.oh-my-zsh/plugins/gitfast/git-completion.bash ]; then
+  . ~/.oh-my-zsh/plugins/gitfast/git-completion.bash
+fi
