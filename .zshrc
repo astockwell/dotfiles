@@ -67,6 +67,7 @@ fi
 
 # Aliases
 alias ll="ls -laF"
+alias cl='fc -ln -1 | awk "{\$1=\$1}1" | pbcopy'
 
 # Git aliases
 alias ga='git add'
