@@ -139,8 +139,10 @@ if [ -d $HOME/.poetry ]; then
 	path+=("$HOME/.poetry/bin")
 fi
 
-### CODESPACES-SPECIFIC ADDITIONS ###
-# Git auto-completion (including branch-names)
-if [ -f ~/.oh-my-zsh/plugins/gitfast/git-completion.bash ]; then
-  . ~/.oh-my-zsh/plugins/gitfast/git-completion.bash
+### GITHUB CODESPACES-SPECIFIC ADDITIONS ###
+if [ "$CODESPACES" == "true" ]; then
+	# Git auto-completion (including branch-names)
+	if [ -f ~/.oh-my-zsh/plugins/gitfast/git-completion.bash ]; then
+	  . ~/.oh-my-zsh/plugins/gitfast/git-completion.bash
+	fi
 fi
