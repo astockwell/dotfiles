@@ -126,7 +126,7 @@ fndecrypt() {
 # G(NU)PG
 export GPG_TTY=$(tty)
 
-# GitHub Codespaces
+### GITHUB CODESPACES-SPECIFIC ADDITIONS ###
 if [ "$CODESPACES" == "true" ]; then
 	# (Codespaces bash prompt theme)
 	__bash_prompt() {
@@ -151,4 +151,9 @@ if [ "$CODESPACES" == "true" ]; then
 	}
 	__bash_prompt
 	export PROMPT_DIRTRIM=4
+	
+	# Git auto-completion (including branch-names)
+	if [ -f ~/.oh-my-zsh/plugins/gitfast/git-completion.bash ]; then
+		. ~/.oh-my-zsh/plugins/gitfast/git-completion.bash
+	fi
 fi
