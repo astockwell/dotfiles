@@ -7,3 +7,4 @@ References:
 - https://github.com/thoughtbot/dotfiles
 - https://github.com/davecheney/dotfiles
 - https://github.com/spf13/dotfiles
+- https://www.jefftk.com/p/logging-shell-history-in-zsh
