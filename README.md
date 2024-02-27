@@ -1,5 +1,7 @@
 # dotfiles
 
+Repo of my configuration files, particularly used for GitHub Codespaces / devcontainers.
+
 References:
 
 - https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account#dotfiles
