@@ -2,7 +2,7 @@
 
 Repo of my configuration files, particularly used for GitHub Codespaces / devcontainers.
 
-References:
+### References:
 
 - https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account#dotfiles
 - https://dotfiles.github.io/inspiration/
