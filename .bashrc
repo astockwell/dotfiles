@@ -126,6 +126,8 @@ fndecrypt() {
 # G(NU)PG
 export GPG_TTY=$(tty)
 
+export GIT_EDITOR=vim
+
 ### GITHUB CODESPACES-SPECIFIC ADDITIONS ###
 if [ "$CODESPACES" == "true" ]; then
 	# (Codespaces bash prompt theme)
