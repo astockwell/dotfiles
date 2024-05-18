@@ -134,6 +134,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # G(NU)PG
 export GPG_TTY=$(tty)
 
+export GIT_EDITOR=vim
+
 # Python poetry dependency manager
 if [ -d $HOME/.poetry ]; then
 	path+=("$HOME/.poetry/bin")
